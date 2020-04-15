@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "待办清单",
+  "version": "1.0.0",
+  "description": "待办清单",
+  "icons": {
+		"16": "src/images/logo.png",
+		"48": "src/images/logo.png",
+		"128": "src/images/logo.png"
+  },
+  "browser_action": {
+		"default_icon": "src/images/logo.png",
+		"default_title": "待办清单",
+		"default_popup": ""
+  },
+  "chrome_url_overrides": {
+    "newtab": "src/newtab.html"
+  }
+}

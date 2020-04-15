@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>老王的乐园</title>
+  <style>
+    *{margin: 0;padding: 0;font-family: "PingFang SC", "Lantinghei SC", "Helvetica Neue", Arial, "Microsoft YaHei", "STHeitiSC-Light", "simsun", sans-serif;;}
+    html{background: #f1f2f9;}
+    body{height: 100vh;width: 100vw;background-size: 100% 100%;background-image: url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1586970320363&di=bc84d55fe184ad4c198b293779e7ce5f&imgtype=0&src=http%3A%2F%2Fpic1.win4000.com%2Fwallpaper%2Fb%2F55597435bb036.jpg');}
+    a{text-decoration: none;}
+    .box {padding: 10%;display: flex;flex-direction: row;justify-content: space-around;}
+
+    /* 导航 */
+    .navs{display: flex;flex-direction: row;justify-content: space-around;width: 50%;}
+    .navs .nav-list{text-align: center;}
+    .navs .img-box{width: 80px;height: 80px;background: #fff;border-radius: 40px;margin-bottom: 14px;}
+    .navs img{width: 60px;height: 60px;margin: 10px;}
+    .navs .nav-txt{font-size: 18px;color: rgba(255,255,255,0.9);}
+    
+    /* 待办清单 */
+    .todo-list{display: flex;background: #fff;height: 60vh;width: 300px;border-radius: 8px;}
+    
+  </style>
+</head>
+<body>
+  <div class="box">
+    <div class="navs">
+      <div class="nav-list">
+        <a href="https://www.google.com" target="_blank">
+          <div class="img-box">
+            <img src="./images/google.png" alt="">
+          </div>
+          <span class="nav-txt">Google</span>
+        </a>
+      </div>
+      <div class="nav-list">
+        <a href="https://www.baidu.com" target="_blank">
+          <div class="img-box">
+            <img src="./images/baidu.png" alt="">
+          </div>
+          <span class="nav-txt">百度一下</span>
+        </a>
+      </div>
+      <div class="nav-list">
+        <a href="https://www.github.com" target="_blank">
+          <div class="img-box">
+            <img src="./images/github.png" alt="">
+          </div>
+          <span class="nav-txt">github</span>
+        </a>
+      </div>
+      <div class="nav-list">
+        <a href="https://www.jd.com" target="_blank">
+          <div class="img-box">
+            <img src="./images/jd.png" alt="">
+          </div>
+          <span class="nav-txt">京东</span>
+        </a>
+      </div>
+    </div>
+    <div class="todo-list">
+      代办清单
+    </div>
+  </div>
+</body>
+</html>
