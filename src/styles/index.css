@@ -60,12 +60,24 @@ a{
 
 /* 待办清单 */
 .todo-list{
-  display: flex;
   background: #fff;
-  height: 60vh;
+  height: 600px;
   width: 360px;
   border-radius: 8px;
   position: relative;
+}
+.todo-list h2{
+  padding: 6px;
+  font-size: 16px;
+  color: #666666;
+}
+.todo-list .todo-title{
+  background: #ffccc7;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+.todo-list .finished-title{
+  background: #d9f7be;
 }
 .todo-list .plus-box{
   position: absolute;
@@ -76,9 +88,52 @@ a{
   height: 50px;
   border-radius: 30px;
   background: #13c2c2;
+  cursor: pointer;
 }
 .todo-list .plus-box img{
   width: 20px;
   height: 20px;
   margin: 15px;
+}
+.todo-list .icon{
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+}
+.todo-list .icon-checked{
+  background: url('../images/icon-checked.png');
+  background-size: 100% 100%;
+}
+.todo-list .icon-check{
+  background: url('../images/icon-check.png');
+  background-size: 100% 100%;
+}
+.todo-list .todo-box{
+  height: 300px;
+  overflow-y: scroll;
+}
+.todo-list .finished-box{
+  height: 200px;
+  overflow-y: scroll;
+}
+.todo-list .list-box{
+  color: #444444;
+  font-size: 16px;
+  padding: 10px 20px;
+}
+.todo-list .list-item{
+  width: 300px;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+}
+.todo-list .list-txt{
+  margin-left: 10px;
+  width: 90%;
+}
+.todo-list .list-txt.finished{
+  text-decoration: line-through;
+  color: #bfbfbf;
 }

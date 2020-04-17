@@ -13,6 +13,9 @@
 		"default_title": "待办清单",
 		"default_popup": ""
   },
+  "background":{
+		"scripts": ["src/js/jq.min.js"]
+	},
   "chrome_url_overrides": {
     "newtab": "src/newtab.html"
   }
