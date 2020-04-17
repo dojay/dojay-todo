@@ -1,0 +1,84 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  font-family: "PingFang SC", "Lantinghei SC", "Helvetica Neue", Arial, "Microsoft YaHei", "STHeitiSC-Light", "simsun", sans-serif;
+  background: #f1f2f9;
+}
+body{
+  height: 100vh;
+  width: 100vw;
+  background-size: 100% 100%;
+  background-image: url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1586970320363&di=bc84d55fe184ad4c198b293779e7ce5f&imgtype=0&src=http%3A%2F%2Fpic1.win4000.com%2Fwallpaper%2Fb%2F55597435bb036.jpg');
+}
+a{
+  text-decoration: none;
+}
+.box{
+  padding: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/* 导航 */
+.navs{
+  width: 400px;
+  overflow: hidden;
+}
+.navs .nav-list{
+  width: 33.33%;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: left;
+  margin-bottom: 30px;
+}
+.navs a{
+  text-align: center;
+}
+.navs .img-box{
+  width: 80px;
+  height: 80px;
+  background: #fff;
+  border-radius: 40px;
+  margin-bottom: 14px;
+}
+.navs img{
+  width: 50px;
+  height: 50px;
+  margin: 15px;
+  border-radius: 25px;
+}
+.navs .nav-txt{
+  font-size: 16px;
+  color: rgba(255,255,255,0.9);
+}
+
+/* 待办清单 */
+.todo-list{
+  display: flex;
+  background: #fff;
+  height: 60vh;
+  width: 360px;
+  border-radius: 8px;
+  position: relative;
+}
+.todo-list .plus-box{
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  margin-left: -25px;
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+  background: #13c2c2;
+}
+.todo-list .plus-box img{
+  width: 20px;
+  height: 20px;
+  margin: 15px;
+}
